@@ -7,11 +7,11 @@
 
 let
   pname = "rootapp";
-  version = "0.9.75";
+  version = "0.9.77";
 
   src = fetchurl {
     url = "https://installer.rootapp.com/installer/Linux/X64/Root.AppImage";
-    hash = "sha256-wLnAlX8pebAhijPnVmjOms4ZOuPE7inPEfEsZ+bxGak=";
+    hash = "sha256-unO9rVeTgsezFYS7sbbHszplCLtryEGKgDz5+qvxL/E=";
   };
 
   appimageContents = appimageTools.extractType2 { inherit pname version src; };
