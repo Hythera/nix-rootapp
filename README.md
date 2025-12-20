@@ -17,6 +17,9 @@
   <br />
 </div>
 
+> [!Note]
+> Root doesn't support versioning right now, so the hash of the download breaks sometimes. This is an issues I sadly can't fix right now, so we'll have to wait until Root fixes it on their end and implements proper versioning. 
+
 ## What is Nix Rootapp?
 
 Because NixOS differs from most Linux distributions, **Root** has to be packaged manually. Nix Rootapp provides support for NixOS to **Root** through a flake, by packaging the AppImage and providing runtime libraries.
