@@ -18,7 +18,7 @@
     in
     {
       packages = forEachPkgs (pkgs: {
-        default = pkgs.callPackage ./rootapp.nix { };
+        rootapp = pkgs.callPackage ./rootapp.nix { };
       });
 
       devShells = forEachPkgs (pkgs: {

@@ -9,7 +9,7 @@ let
   cfg = config.programs.rootapp;
 
   inherit (pkgs.stdenv.hostPlatform) system;
-  rootappPkg = self.packages.${system}.default;
+  rootappPkg = self.packages.${system}.rootapp;
 in
 {
   options.programs.rootapp = {
