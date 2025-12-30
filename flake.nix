@@ -18,17 +18,17 @@
     in
     {
       packages = forEachPkgs (pkgs: {
-        rootapp = pkgs.callPackage ./rootapp.nix { };
+        rootapp = pkgs.callPackage ./rootapp/default.nix { };
       });
 
       devShells = forEachPkgs (pkgs: {
         default = pkgs.mkShell {
-          inputsFrom = [ (pkgs.callPackage ./rootapp.nix { }) ];
+          inputsFrom = [ (pkgs.callPackage ./rootapp/default.nix { }) ];
         };
       });
 
       overlays.default = final: prev: {
-        rootapp = prev.callPackage ./rootapp.nix { };
+        rootapp = prev.callPackage ./rootapp/default.nix { };
       };
 
       homeManagerModules.default = import ./module.nix self;
