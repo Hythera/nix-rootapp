@@ -4,7 +4,7 @@
 <h1 align="center">Nix Rootapp</h1>
 
 <p align="center">
-<a href="https://www.rootapp.com/download" target="_blank"><img height=20 src="https://img.shields.io/badge/version-0.9.75-blue" /></a>
+<a href="https://www.rootapp.com/download" target="_blank"><img height=20 src="https://img.shields.io/badge/version-0.9.93-blue" /></a>
 <img src="https://img.shields.io/github/stars/Hythera/nix-rootapp" alt="stars">
 </p>
 
